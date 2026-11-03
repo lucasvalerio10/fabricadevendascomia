@@ -2,7 +2,7 @@
    CONFIGURAÇÃO DA PÁGINA — PREENCHA ANTES DE PUBLICAR
    ============================================================ */
 const CONFIG = {
-  checkoutUrl: '', // Cole aqui seu link REAL de checkout. Ex.: 'https://pay.kiwify.com.br/abc123'
+  checkoutUrl: 'https://pay.kiwify.com.br/Xlx5pAN', // Cole aqui seu link REAL de checkout. Ex.: 'https://pay.kiwify.com.br/abc123'
   emailContato: '', // Ex.: 'suporte@seudominio.com' — atualiza o link do rodapé
   metaPixelId: ''   // Opcional: ID numérico do Meta Pixel, se aplicável
 };
