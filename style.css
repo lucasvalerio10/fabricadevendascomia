@@ -134,3 +134,10 @@
 .mobile-bar{display:none!important}
 /* Melhor equilíbrio tipográfico no desktop: evita 'IA' isolado em uma linha. */
 @media(min-width:851px){.hero h1{font-size:clamp(54px,5vw,74px)}}
+
+/* CARROSSEL DE PROVAS - MOBILE */
+@media (max-width: 560px) {
+  .proof-card {
+    flex: 0 0 90%;
+  }
+}
