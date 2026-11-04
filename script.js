@@ -4,7 +4,7 @@
 const CONFIG = {
   checkoutUrl: 'https://pay.kiwify.com.br/Xlx5pAN', // Cole aqui seu link REAL de checkout. Ex.: 'https://pay.kiwify.com.br/abc123'
   emailContato: '', // Ex.: 'suporte@seudominio.com' — atualiza o link do rodapé
-  metaPixelId: ''   // Opcional: ID numérico do Meta Pixel, se aplicável
+  metaPixelId: '984795877418323'   // Opcional: ID numérico do Meta Pixel, se aplicável
 };
 
 (function () {
@@ -63,7 +63,7 @@ const CONFIG = {
     el.textContent = hasContact ? CONFIG.emailContato : 'Canal de suporte informado no checkout';
   });
 
-  // Meta Pixel: não instala nenhum rastreador se nenhum ID for configurado.
+  //  Pixel: não instala nenhum rastreador se nenhum ID for configurado.
   if (CONFIG.metaPixelId && /^\d{5,25}$/.test(CONFIG.metaPixelId)) {
     /* Meta Pixel base oficial, opcional. Respeite suas obrigações de privacidade. */
     /* eslint-disable */
