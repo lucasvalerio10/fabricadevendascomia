@@ -202,3 +202,15 @@
     height: auto;
   }
 }
+
+/* PLAYER DE VIDEO NO CARROSSEL */
+.proof-video-inline {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  background: #070b08;
+  border: none;
+  border-radius: 16px;
+}
