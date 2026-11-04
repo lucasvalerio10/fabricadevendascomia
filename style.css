@@ -141,3 +141,64 @@
     flex: 0 0 90%;
   }
 }
+
+
+
+/* AJUSTE FINAL DO CARROSSEL */
+
+.proofs-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.proof-card {
+  min-width: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.proof-media,
+.proof-video {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.proof-media img,
+.proof-video img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Capa provisória do vídeo 02 */
+.proof-video-no-thumb {
+  min-height: 320px;
+  background: linear-gradient(145deg, #172419, #070b08);
+  border: 1px solid #31432d;
+}
+
+/* MOBILE */
+@media (max-width: 560px) {
+  .proof-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .proof-media,
+  .proof-video {
+    height: auto;
+  }
+
+  .proof-media img,
+  .proof-video img {
+    width: 100%;
+    height: auto;
+  }
+}
