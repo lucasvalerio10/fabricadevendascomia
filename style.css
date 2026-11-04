@@ -62,9 +62,35 @@
 .proofs-description{color:#aebaae;font-size:15px;margin:16px 0 27px}
 .proofs-track{display:flex;gap:15px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain;padding:3px 0 18px;outline-offset:4px}
 .proofs-track::-webkit-scrollbar{display:none}
-.proof-card{flex:0 0 calc((100% - 30px)/3);min-width:0;border:1px solid #385035;background:#172118;border-radius:18px;overflow:hidden;scroll-snap-align:start}
-.proof-media,.proof-video{display:block;position:relative;width:100%;height:265px;background:#0e180f;overflow:hidden}
-.proof-media img,.proof-video img{display:block;width:100%;height:100%;object-fit:contain}
+.proof-card{
+  flex:0 0 calc((100% - 30px)/3);
+  min-width:0;
+  border:none;
+  background:transparent;
+  border-radius:18px;
+  overflow:visible;
+  scroll-snap-align:start;
+}
+
+.proof-media,
+.proof-video{
+  display:block;
+  position:relative;
+  width:100%;
+  height:auto;
+  background:transparent;
+  overflow:hidden;
+  border-radius:18px;
+}
+
+.proof-media img,
+.proof-video img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:initial;
+  border-radius:18px;
+}
 .proof-video{padding:0;border:0;cursor:pointer;color:#07100a}
 .proof-video:hover img{transform:scale(1.02)}
 .proof-video img{transition:transform .2s}
@@ -72,6 +98,9 @@
 .proof-meta{padding:17px 19px 20px;display:grid;gap:5px}
 .proof-meta>span{font:700 10px var(--font-head);letter-spacing:.14em;color:var(--lime)}
 .proof-meta strong{font:600 15px var(--font-head);color:#f1f7ed;letter-spacing:-.02em}
+.proof-meta{
+  display:none;
+}
 .proof-disclaimer{margin:16px 0 0;color:#829281;font-size:11px;max-width:880px;line-height:1.6}
 .proof-dialog{border:1px solid #61784f;border-radius:18px;background:#0b120c;color:#f4f5f2;padding:16px;width:min(820px,calc(100% - 28px));box-shadow:0 20px 120px #000a}
 .proof-dialog::backdrop{background:#000c;backdrop-filter:blur(6px)}
@@ -92,8 +121,16 @@
 .price-card{background:#172017;border-color:#3e523b}
 .site-footer{background:#070b08}
 @media(max-width:850px){.hero{padding-top:72px}.hero-layout{grid-template-columns:1fr}.hero h1{font-size:clamp(49px,7.7vw,74px)}.proof-card{flex-basis:calc((100% - 15px)/2)}.author-photo-frame{height:370px;max-width:600px;width:100%}}
-@media(max-width:560px){.topline{font-size:8px}.brand-logo{width:164px;max-height:55px}.header-inner{gap:8px}.site-header .header-inner{height:66px}.hero{padding-top:62px}.hero h1{font-size:clamp(45px,10.6vw,65px);line-height:1.02;margin:28px 0 24px}.hero-sub{font-size:15px}.eyebrow{font-size:8.7px;padding:9px 12px;letter-spacing:.085em}.hero-layout{gap:38px}.hero-art{padding:17px}.proofs-heading{align-items:start;gap:14px;flex-direction:column}.proofs-heading h2{font-size:39px}.proofs-controls{align-self:flex-end}.proofs-description{font-size:13px}.proof-card{flex-basis:100%}.proof-media,.proof-video{height:290px}.author-photo-frame{height:315px}.site-footer{padding-bottom:35px}.toast{bottom:18px}}
+.proof-media,
+.proof-video {
+  height: auto;
+}
 
+.proof-media img,
+.proof-video img {
+  width: 100%;
+  height: auto;
+}
 .mobile-bar{display:none!important}
 /* Melhor equilíbrio tipográfico no desktop: evita 'IA' isolado em uma linha. */
 @media(min-width:851px){.hero h1{font-size:clamp(54px,5vw,74px)}}
